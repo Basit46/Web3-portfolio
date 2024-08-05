@@ -6,11 +6,11 @@ import bg from "../assets/bg.jpg";
 const Works = () => {
   return (
     <div id="works" className="">
-      <h1 className="text-[3rem] vsm:text-[5rem] font-extrabold pl-[10%] pt-[50px] leading-[1.0]">
-        Proof of Work
+      <h1 className="text-[3rem] vsm:text-[5rem] font-extrabold mx-[10%] pt-[50px] leading-[1.0]">
+        Proof of Work:
       </h1>
 
-      <div className="mt-[80px] mx-[10%] lg:mx-0 lg:mt-[30px] flex flex-col gap-[50px] sm:gap-[70px] lg:gap-[30px]">
+      <div className="mt-[60px] mx-[10%] lg:mx-0 lg:mt-[30px] flex flex-col gap-[50px] sm:gap-[70px] lg:gap-[30px]">
         {projects.map((project, i) => (
           <div
             key={i}

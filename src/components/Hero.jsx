@@ -12,6 +12,7 @@ const Hero = () => {
     fetch("https://ipapi.co/json/")
       .then((response) => response.json())
       .then((data) => {
+        console.log(data);
         setLocation(data);
       })
       .catch((err) => {
@@ -77,7 +78,7 @@ const Hero = () => {
 
       <div className="absolute z-[2] bottom-[50px] left-[10%] w-[30%] vsm:w-[20%] xmd:w-[10%]">
         <p className="uppercase">
-          {location?.country_calling_code} {location?.country_name}
+          {location?.country_calling_code} {location?.city}
         </p>
         <p>{date}</p>
       </div>
