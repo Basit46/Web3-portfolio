@@ -32,7 +32,7 @@
   }
 
   .menu .menu-link {
-    @apply text-[7rem] opacity-0 translate-y-[20px] text-center font-extrabold text-black/95 leading-none cursor-pointer;
+    @apply text-[5rem] sm:text-[7rem] opacity-0 translate-y-[20px] text-center font-extrabold text-black/95 leading-none cursor-pointer;
   }
 }
 

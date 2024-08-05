@@ -5,9 +5,11 @@ const Footer = () => {
   return (
     <footer
       id="contact"
-      className="px-[10%] mt-[50px] h-screen py-[50px] flex flex-col justify-between"
+      className="px-[10%] mt-[50px] gap-[50px] vsm:h-screen py-[50px] flex flex-col justify-between"
     >
-      <h1 className="text-center text-[7rem] font-extrabold ">Let's Connect</h1>
+      <h1 className="text-left vsm:text-center text-[4rem] lg:text-[7rem] font-extrabold leading-none">
+        Let's Connect
+      </h1>
 
       <div className="w-full">
         <a

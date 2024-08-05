@@ -1,33 +1,40 @@
 import React from "react";
 import { projects } from "../works";
+import { HiOutlineArrowTrendingUp as Arrow } from "react-icons/hi2";
 
 const Works = () => {
   return (
     <div id="works" className="">
-      <h1 className="text-[5rem] font-extrabold pl-[10%] pt-[50px]">
+      <h1 className="text-[3rem] vsm:text-[5rem] font-extrabold pl-[10%] pt-[50px] leading-[1.0]">
         Proof of Work
       </h1>
 
-      <div className="mt-[30px] flex flex-col gap-[30px]">
+      <div className="mt-[80px] mx-[10%] lg:mx-0 lg:mt-[30px] flex flex-col gap-[50px] sm:gap-[70px] lg:gap-[30px]">
         {projects.map((project, i) => (
-          <div key={i} className="flex h-[50vh] items-center">
-            <div className="ml-[10%] w-[30%] h-full pt-[100px]">
-              <h1 className="text-[3rem] font-extrabold leading-none">
+          <div
+            key={i}
+            className="flex flex-col-reverse lg:flex-row h-fit lg:h-[50vh] lg:items-center gap-[20px] lg:gap-0"
+          >
+            <div className="lg:ml-[10%] lg:w-[30%] h-full lg:pt-[100px]">
+              <h1 className="text-[2.5rem] vsm:text-[3rem] font-extrabold leading-none">
                 {project.name}
               </h1>
-              <p className="mt-[10px] mb-[30px]">{project.desc}</p>
+              <p className="mt-[10px] mb-[10px] lg:mb-[30px] vsm:text-[1.2rem] leading-[1.1]">
+                {project.desc}
+              </p>
 
               <a
-                className="w-full border-y border-gray-500 px-[20px] py-[10px] text-[1.5rem]"
+                className="text-[1.2rem] vsm:text-[1.5rem] flex"
                 href={project.link}
                 target="blank"
               >
-                View Live
+                <span>View Live</span> <Arrow />
               </a>
             </div>
+
             <div
               style={{ backgroundImage: "url('src/assets/bg.jpg')" }}
-              className="h-full flex-1 mr-[10%] p-[50px]"
+              className="h-full flex-1 lg:mr-[10%] p-[30px] sm:p-[50px]"
             >
               <img
                 className="h-full w-full object-contain"

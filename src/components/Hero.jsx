@@ -32,15 +32,15 @@ const Hero = () => {
 
   return (
     <div id="hero" className="hero w-full relative h-screen pt-[150px]">
-      <h1 className="relative z-[2] pl-[20%] ml-[-10px] text-[13rem] font-extrabold leading-[1.0]">
+      <h1 className="relative z-[2] pl-[10%] lg:pl-[20%] ml-[-5px] sm:ml-[-10px] text-[7rem] xmd:text-[10rem] lg:text-[13rem] font-extrabold leading-none">
         I'm Basit
       </h1>
-      <p className="relative z-[2] pl-[20%] text-[1.3rem]">
+      <p className="relative z-[2] pl-[10%] sm:pl-[20%] vsm:text-[1.3rem]">
         A creative <span className="text-[#00FFFF]">WEB3</span> website
         developer
       </p>
 
-      <div className="absolute bottom-[50px] right-[10%] w-[10%]">
+      <div className="absolute z-[2] bottom-[50px] right-[10%] w-[30%] vsm:w-[20%] xmd:w-[10%]">
         <a
           href="google.com"
           target="blank"
@@ -75,7 +75,7 @@ const Hero = () => {
         </a>
       </div>
 
-      <div className="absolute bottom-[50px] left-[10%] w-[10%]">
+      <div className="absolute z-[2] bottom-[50px] left-[10%] w-[30%] vsm:w-[20%] xmd:w-[10%]">
         <p className="uppercase">
           {location?.country_calling_code} {location?.country_name}
         </p>
@@ -83,17 +83,17 @@ const Hero = () => {
       </div>
 
       <img
-        className="absolute bottom-0 left-[30%] w-[10%]"
+        className="absolute bottom-[20%] vsm:bottom-0 left-[20%] vsm:left-[30%] w-[20%] md:w-[10%]"
         src={img1}
         alt="art"
       />
       <img
-        className="absolute top-[10%] right-[0%] w-[10%]"
+        className="absolute top-[10%] right-[0%] w-[20%] md:w-[10%]"
         src={img2}
         alt="art"
       />
       <img
-        className="absolute bottom-[20%] right-[30%] w-[10%]"
+        className="absolute bottom-[40%] sm:bottom-[20%] right-[30%] w-[20%] md:w-[10%]"
         src={img3}
         alt="art"
       />
