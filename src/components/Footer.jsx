@@ -13,7 +13,7 @@ const Footer = () => {
 
       <div className="w-full">
         <a
-          href="google.com"
+          href="https://t.me/CodeBender"
           target="blank"
           className="flex gap-[5px] py-[2px] border-b border-b-[gray]"
         >
@@ -21,7 +21,7 @@ const Footer = () => {
           <Arrow />
         </a>
         <a
-          href="google.com"
+          href="https://x.com/Basit_js"
           target="blank"
           className="flex gap-[5px] py-[2px] border-b border-b-[gray]"
         >
@@ -29,7 +29,7 @@ const Footer = () => {
           <Arrow />
         </a>
         <a
-          href="google.com"
+          href="mailto:hassanbasitope@gmail.com"
           target="blank"
           className="flex gap-[5px] py-[2px] border-b border-b-[gray]"
         >
@@ -37,11 +37,11 @@ const Footer = () => {
           <Arrow />
         </a>
         <a
-          href="google.com"
+          href="https://signal.me/#eu/2_4k5O33ywFdQW-0-j2Yp4oWF87yUU5dYieUBwXpRI6AJmm2q35JKLBYv1S_EGe3"
           target="blank"
           className="flex gap-[5px] py-[2px] border-b border-b-[gray]"
         >
-          <p className="text-[3rem]">Discord</p>
+          <p className="text-[3rem]">Signal</p>
           <Arrow />
         </a>
       </div>

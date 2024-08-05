@@ -1,6 +1,7 @@
 import React from "react";
 import { projects } from "../works";
 import { HiOutlineArrowTrendingUp as Arrow } from "react-icons/hi2";
+import bg from "../assets/bg.jpg";
 
 const Works = () => {
   return (
@@ -32,12 +33,14 @@ const Works = () => {
               </a>
             </div>
 
-            <div
-              style={{ backgroundImage: "url('src/assets/bg.jpg')" }}
-              className="h-full flex-1 lg:mr-[10%] p-[30px] sm:p-[50px]"
-            >
+            <div className="relative h-full flex-1 lg:mr-[10%] p-[30px] sm:p-[40px]">
               <img
-                className="h-full w-full object-contain"
+                className="absolute top-0 left-0 size-full"
+                src={bg}
+                alt="bg"
+              />
+              <img
+                className="relative z-[2] h-full w-full object-contain"
                 src={project.img}
                 alt="project"
               />

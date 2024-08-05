@@ -42,7 +42,7 @@ const Hero = () => {
 
       <div className="absolute z-[2] bottom-[50px] right-[10%] w-[30%] vsm:w-[20%] xmd:w-[10%]">
         <a
-          href="google.com"
+          href="https://t.me/CodeBender"
           target="blank"
           className="flex justify-between py-[2px] border-b border-b-[gray]"
         >
@@ -50,7 +50,7 @@ const Hero = () => {
           <Arrow />
         </a>
         <a
-          href="google.com"
+          href="https://x.com/Basit_js"
           target="blank"
           className="flex justify-between py-[2px] border-b border-b-[gray]"
         >
@@ -58,7 +58,7 @@ const Hero = () => {
           <Arrow />
         </a>
         <a
-          href="google.com"
+          href="mailto:hassanbasitope@gmail.com"
           target="blank"
           className="flex justify-between py-[2px] border-b border-b-[gray]"
         >
@@ -66,11 +66,11 @@ const Hero = () => {
           <Arrow />
         </a>
         <a
-          href="google.com"
+          href="https://signal.me/#eu/2_4k5O33ywFdQW-0-j2Yp4oWF87yUU5dYieUBwXpRI6AJmm2q35JKLBYv1S_EGe3"
           target="blank"
           className="flex justify-between py-[2px] border-b border-b-[gray]"
         >
-          <p className="text-[1.1rem]">Discord</p>
+          <p className="text-[1.1rem]">Signal</p>
           <Arrow />
         </a>
       </div>
