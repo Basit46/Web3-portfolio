@@ -1,13 +1,17 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { HiOutlineArrowTrendingUp as Arrow } from "react-icons/hi2";
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.jpg";
 import img3 from "../assets/img3.jpg";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import SplitType from "split-type";
+
+gsap.registerPlugin(useGSAP);
 
 const Hero = () => {
   const [location, setLocation] = useState({});
   const [date, setDate] = useState("");
-
   useEffect(() => {
     fetch("https://ipapi.co/json/")
       .then((response) => response.json())
@@ -20,7 +24,6 @@ const Hero = () => {
         setLocation({});
       });
   }, []);
-
   useEffect(() => {
     const intervalId = setInterval(() => {
       setDate(new Date().toLocaleTimeString());
@@ -31,12 +34,47 @@ const Hero = () => {
     };
   }, []);
 
+  const heroRef = useRef();
+  var tl = gsap.timeline();
+  useGSAP(
+    () => {
+      const splitText = new SplitType(".herotext1", {
+        types: "chars",
+      });
+
+      tl.from(".herotext1 .char", {
+        opacity: 0,
+        x: -50,
+        stagger: 0.1,
+      })
+        .from(".herotext2", {
+          opacity: 0,
+          duration: 1,
+        })
+        .from(".herotext3", {
+          opacity: 0,
+          y: 20,
+          stagger: 0.05,
+        })
+        .from(".herotext4", {
+          opacity: 0,
+          y: 20,
+          stagger: 0.1,
+        });
+    },
+    { scope: heroRef }
+  );
+
   return (
-    <div id="hero" className="hero w-full relative h-screen pt-[150px]">
-      <h1 className="relative z-[2] pl-[10%] lg:pl-[20%] ml-[-5px] sm:ml-[-10px] text-[7rem] xmd:text-[10rem] lg:text-[13rem] font-extrabold leading-none">
+    <div
+      id="hero"
+      ref={heroRef}
+      className="hero w-full relative h-screen pt-[150px]"
+    >
+      <h1 className="herotext1 relative z-[2] pl-[10%] lg:pl-[20%] ml-[-5px] sm:ml-[-10px] text-[7rem] xmd:text-[10rem] lg:text-[13rem] font-extrabold leading-none">
         I'm Basit
       </h1>
-      <p className="relative z-[2] pl-[10%] sm:pl-[20%] vsm:text-[1.3rem]">
+      <p className="herotext2 relative z-[2] pl-[10%] sm:pl-[20%] vsm:text-[1.3rem]">
         A creative <span className="text-[#00FFFF]">WEB3</span> website
         developer
       </p>
@@ -45,7 +83,7 @@ const Hero = () => {
         <a
           href="https://t.me/CodeBender"
           target="blank"
-          className="flex justify-between py-[2px] border-b border-b-[gray]"
+          className="herotext4 flex justify-between py-[2px] border-b border-b-[gray]"
         >
           <p className="text-[1.1rem]">Telegram</p>
           <Arrow />
@@ -53,7 +91,7 @@ const Hero = () => {
         <a
           href="https://x.com/Basit_js"
           target="blank"
-          className="flex justify-between py-[2px] border-b border-b-[gray]"
+          className="herotext4 flex justify-between py-[2px] border-b border-b-[gray]"
         >
           <p className="text-[1.1rem]">Twitter</p>
           <Arrow />
@@ -61,7 +99,7 @@ const Hero = () => {
         <a
           href="mailto:hassanbasitope@gmail.com"
           target="blank"
-          className="flex justify-between py-[2px] border-b border-b-[gray]"
+          className="herotext4 flex justify-between py-[2px] border-b border-b-[gray]"
         >
           <p className="text-[1.1rem]">Mail</p>
           <Arrow />
@@ -69,7 +107,7 @@ const Hero = () => {
         <a
           href="https://signal.me/#eu/2_4k5O33ywFdQW-0-j2Yp4oWF87yUU5dYieUBwXpRI6AJmm2q35JKLBYv1S_EGe3"
           target="blank"
-          className="flex justify-between py-[2px] border-b border-b-[gray]"
+          className="herotext4 flex justify-between py-[2px] border-b border-b-[gray]"
         >
           <p className="text-[1.1rem]">Signal</p>
           <Arrow />
@@ -77,10 +115,10 @@ const Hero = () => {
       </div>
 
       <div className="absolute z-[2] bottom-[50px] left-[10%] w-[30%] vsm:w-[20%] xmd:w-[10%]">
-        <p className="uppercase">
+        <p className="uppercase herotext3">
           {location?.country_calling_code} {location?.city}
         </p>
-        <p>{date}</p>
+        <p className="herotext3">{date}</p>
       </div>
 
       <img
