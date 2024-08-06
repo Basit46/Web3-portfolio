@@ -39,13 +39,13 @@ const Hero = () => {
   useGSAP(
     () => {
       const splitText = new SplitType(".herotext1", {
-        types: "chars",
+        types: "words",
       });
 
-      tl.from(".herotext1 .char", {
+      tl.from(".herotext1 .word", {
         opacity: 0,
         x: -50,
-        stagger: 0.1,
+        stagger: 0.4,
       })
         .from(".herotext2", {
           opacity: 0,
