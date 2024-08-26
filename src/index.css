@@ -1,0 +1,43 @@
+@import url("https://fonts.cdnfonts.com/css/cabinet-grotesk");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .lines-cont {
+    @apply flex;
+  }
+  .lines-cont div {
+    @apply h-full border-l border-l-[gray]/25 flex-1;
+  }
+  .lines-cont div:last-child {
+    @apply border-r border-r-[gray]/25;
+  }
+  .lines-cont div:first-child {
+    @apply border-l border-l-[gray]/25;
+  }
+
+  .menu .bar {
+    @apply w-[10%] bg-white translate-y-[-100%];
+  }
+  .menu .bar {
+    @apply h-full border-l border-l-[gray]/50 flex-1;
+  }
+  .menu .bar:last-child {
+    @apply border-r border-r-[gray]/50;
+  }
+  .menu .bar:first-child {
+    @apply border-l border-l-[gray]/50;
+  }
+
+  .menu .menu-link {
+    @apply text-[5rem] sm:text-[7rem] opacity-0 translate-y-[20px] text-center font-extrabold text-black/95 leading-none cursor-pointer;
+  }
+}
+
+@layer utilities {
+  body {
+    font-family: "Cabinet Grotesk", sans-serif;
+  }
+}
