@@ -18,6 +18,19 @@
     @apply border-l border-l-[gray]/25;
   }
 
+  .cover-bars {
+    @apply flex;
+  }
+  .cover-bars div {
+    @apply h-full bg-white  border-l border-l-[gray]/25 flex-1;
+  }
+  .cover-bars div:last-child {
+    @apply border-r border-r-[gray]/25;
+  }
+  .cover-bars div:first-child {
+    @apply border-l border-l-[gray]/25;
+  }
+
   .menu .bar {
     @apply w-[10%] bg-white translate-y-[-100%];
   }

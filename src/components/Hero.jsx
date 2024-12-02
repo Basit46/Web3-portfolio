@@ -75,8 +75,7 @@ const Hero = () => {
         I'm Basit
       </h1>
       <p className="herotext2 relative z-[2] pl-[10%] sm:pl-[20%] vsm:text-[1.3rem]">
-        A creative <span className="text-[#00FFFF]">WEB3</span> website
-        developer
+        A <span className="text-[#00FFFF]">creative</span> website developer
       </p>
 
       <div className="absolute z-[2] bottom-[50px] right-[10%] w-[30%] vsm:w-[20%] xmd:w-[10%]">
@@ -105,11 +104,11 @@ const Hero = () => {
           <Arrow />
         </a>
         <a
-          href="https://signal.me/#eu/2_4k5O33ywFdQW-0-j2Yp4oWF87yUU5dYieUBwXpRI6AJmm2q35JKLBYv1S_EGe3"
+          href="https://github.com/Basit46"
           target="blank"
           className="herotext4 flex justify-between py-[2px] border-b border-b-[gray]"
         >
-          <p className="text-[1.1rem]">Signal</p>
+          <p className="text-[1.1rem]">Github</p>
           <Arrow />
         </a>
       </div>

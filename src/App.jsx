@@ -6,6 +6,7 @@ import Works from "./components/Works";
 import Footer from "./components/Footer";
 import Menu from "./components/Menu";
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 function App() {
   const [show, setShow] = useState(false);
@@ -20,6 +21,14 @@ function App() {
     }
   };
 
+  useGSAP(
+    () => {
+      gsap.to(".cover-bars div", { y: "-100%", stagger: 0.1, delay: 1 });
+      gsap.to(".cover-bars", { delay: 2.1, autoAlpha: 0 });
+    },
+    { scope: "body" }
+  );
+
   return (
     <div className="relative min-h-screen bg-black/95 text-white">
       <div className="w-full relative z-[2]">
@@ -32,6 +41,19 @@ function App() {
       </div>
 
       <div className="lines-cont fixed top-0 left-0 w-full h-screen flex gap-0">
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+        <div />
+      </div>
+
+      <div className="cover-bars z-[3] fixed top-0 left-0 w-full h-screen flex gap-0">
         <div />
         <div />
         <div />
