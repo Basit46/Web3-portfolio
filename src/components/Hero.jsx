@@ -35,7 +35,7 @@ const Hero = () => {
   }, []);
 
   const heroRef = useRef();
-  var tl = gsap.timeline();
+  var tl = gsap.timeline({ delay: 1.5 });
   useGSAP(
     () => {
       const splitText = new SplitType(".herotext1", {
