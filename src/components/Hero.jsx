@@ -75,7 +75,8 @@ const Hero = () => {
         I'm Basit
       </h1>
       <p className="herotext2 relative z-[2] pl-[10%] sm:pl-[20%] vsm:text-[1.3rem]">
-        A <span className="text-[#00FFFF]">creative</span> website developer
+        A <span className="text-[#00FFFF]">creative</span> Website and App
+        developer
       </p>
 
       <div className="absolute z-[2] bottom-[50px] right-[10%] w-[30%] vsm:w-[20%] xmd:w-[10%]">

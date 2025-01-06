@@ -30,9 +30,9 @@ const About = () => {
           <span className="text-[aqua]">Web3</span> <br /> Projects
         </h1>
         <p className="w-[70%] vsm:w-[50%] mt-[20px] text-[1.2rem]">
-          Frontend and Full-Stack Tech Stack: React.js, Next.js, Tailwind CSS,
-          Node.js, Express.js, Firebase, Web3.js, Ethers.js, Redux Toolkit and
-          REST APIs.
+          Frontend and Full-Stack Tech Stack: React.js, Next.js, React Native,
+          Expo, Tailwind CSS, Node.js, Express.js, Firebase, Web3.js, Ethers.js,
+          Redux Toolkit, Tanstack Query and REST APIs.
         </p>
       </div>
     </div>
