@@ -8,9 +8,6 @@ const MouseFollowSphere = () => {
 
   useFrame((state) => {
     if (meshRef.current) {
-      //   const x = state.mouse.x;
-      //   meshRef.current.rotation.y = x * 2;
-
       meshRef.current.rotation.y += 0.005;
       meshRef.current.rotation.x += 0.005;
     }
