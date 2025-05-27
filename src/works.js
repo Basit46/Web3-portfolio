@@ -10,12 +10,12 @@ import toncula from "./assets/TONCULA.png";
 import thrift from "./assets/thrift.png";
 
 export const projects = [
-  {
-    name: "Ecommerce Store",
-    desc: "An Ecommerce store built with Next.js 13 and powered by Stripe Checkout",
-    img: thrift,
-    link: "https://shopthrifts.vercel.app/",
-  },
+  // {
+  //   name: "Ecommerce Store",
+  //   desc: "An Ecommerce store built with Next.js 13 and powered by Stripe Checkout",
+  //   img: thrift,
+  //   link: "https://shopthrifts.vercel.app/",
+  // },
   {
     name: "911-Insidejob",
     desc: "Website for a memecoin project",
@@ -23,34 +23,10 @@ export const projects = [
     link: "https://www.911insidejob.info/",
   },
   {
-    name: "BV Swap",
-    desc: "A simple solution for coin and token swaps",
-    img: BV,
-    link: "https://bv-swap.vercel.app/",
-  },
-  {
-    name: "Harmony Launcher",
-    desc: "A redesigned version of harmony launcher website",
-    img: Harmony,
-    link: "https://harmony-launcher.netlify.app/",
-  },
-  {
     name: "Toncula",
     desc: "A dracula concept website for $TNCULA",
     img: toncula,
     link: "https://toncula.xyz/",
-  },
-  {
-    name: "Flexbot",
-    desc: "All-in-One Comprehensive trading bot",
-    img: flexbot,
-    link: "https://www.flexbot.xyz/",
-  },
-  {
-    name: "HouseOnSol",
-    desc: "Real Estate investing platform on Solana",
-    img: HouseOnSol,
-    link: "https://house-on-solana.vercel.app/",
   },
   {
     name: "WildFox Squad NFT",
@@ -69,5 +45,30 @@ export const projects = [
     desc: "A crypto wallet website",
     img: Trojan,
     link: "https://trojanwallet.vercel.app/",
+  },
+  // {
+  //   name: "Flexbot",
+  //   desc: "All-in-One Comprehensive trading bot",
+  //   img: flexbot,
+  //   link: "https://www.flexbot.xyz/",
+  // },
+  {
+    name: "HouseOnSol",
+    desc: "Real Estate investing platform on Solana",
+    img: HouseOnSol,
+    link: "https://house-on-solana.vercel.app/",
+  },
+
+  {
+    name: "BV Swap",
+    desc: "A simple solution for coin and token swaps",
+    img: BV,
+    link: "https://bv-swap.vercel.app/",
+  },
+  {
+    name: "Harmony Launcher",
+    desc: "A redesigned version of harmony launcher website",
+    img: Harmony,
+    link: "https://harmony-launcher.netlify.app/",
   },
 ];

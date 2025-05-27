@@ -6,6 +6,7 @@ import img3 from "../assets/img3.jpg";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import SplitType from "split-type";
+import ThreeD from "./ThreeD";
 
 gsap.registerPlugin(useGSAP);
 
@@ -16,7 +17,6 @@ const Hero = () => {
     fetch("https://ipapi.co/json/")
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
         setLocation(data);
       })
       .catch((err) => {
@@ -71,6 +71,8 @@ const Hero = () => {
       ref={heroRef}
       className="hero w-full relative h-screen pt-[150px]"
     >
+      <ThreeD />
+
       <h1 className="herotext1 relative z-[2] pl-[10%] lg:pl-[20%] ml-[-5px] sm:ml-[-10px] text-[7rem] xmd:text-[10rem] lg:text-[13rem] font-extrabold leading-none">
         I'm Basit
       </h1>
