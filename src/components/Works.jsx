@@ -51,7 +51,8 @@ const Works = () => {
               <a
                 className="project-text3 text-[1.2rem] vsm:text-[1.5rem] flex"
                 href={project.link}
-                target="blank"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <span>View Live</span> <Arrow />
               </a>
