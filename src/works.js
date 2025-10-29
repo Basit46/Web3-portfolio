@@ -5,9 +5,8 @@ import Newnft from "./assets/NFT CARDS.png";
 import Trojan from "./assets/Trojan.png";
 import BV from "./assets/BV Swap.png";
 import Harmony from "./assets/Harmony.png";
-import inside from "./assets/911.png";
+import zerionHub from "./assets/zerionHub.png";
 import toncula from "./assets/TONCULA.png";
-import thrift from "./assets/thrift.png";
 
 export const projects = [
   // {
@@ -16,17 +15,23 @@ export const projects = [
   //   img: thrift,
   //   link: "https://shopthrifts.vercel.app/",
   // },
+  // {
+  //   name: "911-Insidejob",
+  //   desc: "Website for a memecoin project",
+  //   img: inside,
+  //   link: "https://www.911insidejob.info/",
+  // },
+  // {
+  //   name: "Toncula",
+  //   desc: "A dracula concept website for $TNCULA",
+  //   img: toncula,
+  //   link: "https://toncula.xyz/",
+  // },
   {
-    name: "911-Insidejob",
-    desc: "Website for a memecoin project",
-    img: inside,
-    link: "https://www.911insidejob.info/",
-  },
-  {
-    name: "Toncula",
-    desc: "A dracula concept website for $TNCULA",
-    img: toncula,
-    link: "https://toncula.xyz/",
+    name: "ZerionHub",
+    desc: "A Consumer app built on Zerion",
+    img: zerionHub,
+    link: "https://zerionhub.vercel.app/",
   },
   {
     name: "WildFox Squad NFT",
