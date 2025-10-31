@@ -1,4 +1,3 @@
-import flexbot from "./assets/Flexbot.png";
 import HouseOnSol from "./assets/Houseonsol.png";
 import Wildfox from "./assets/Wildfox.png";
 import Newnft from "./assets/NFT CARDS.png";
@@ -6,27 +5,15 @@ import Trojan from "./assets/Trojan.png";
 import BV from "./assets/BV Swap.png";
 import Harmony from "./assets/Harmony.png";
 import zerionHub from "./assets/zerionHub.png";
-import toncula from "./assets/TONCULA.png";
+import coinvista from "./assets/coinvista.png";
 
 export const projects = [
-  // {
-  //   name: "Ecommerce Store",
-  //   desc: "An Ecommerce store built with Next.js 13 and powered by Stripe Checkout",
-  //   img: thrift,
-  //   link: "https://shopthrifts.vercel.app/",
-  // },
-  // {
-  //   name: "911-Insidejob",
-  //   desc: "Website for a memecoin project",
-  //   img: inside,
-  //   link: "https://www.911insidejob.info/",
-  // },
-  // {
-  //   name: "Toncula",
-  //   desc: "A dracula concept website for $TNCULA",
-  //   img: toncula,
-  //   link: "https://toncula.xyz/",
-  // },
+  {
+    name: "CoinVista",
+    desc: "A all-in-one crypto advanced dashboard with real time assets tracking, market analytics, and AI powered insights in a sleek, modern interface",
+    img: coinvista,
+    link: "https://coinvista-dashboard.vercel.app/",
+  },
   {
     name: "ZerionHub",
     desc: "A Consumer app built on Zerion",
