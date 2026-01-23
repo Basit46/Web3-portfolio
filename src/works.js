@@ -27,47 +27,18 @@ export const projects = [
     img: zerionHub,
     link: "https://zerionhub.vercel.app/",
   },
-  {
-    name: "WildFox Squad NFT",
-    desc: "Landing page of a NFT project",
-    img: Wildfox,
-    link: "https://wildfox-nft.vercel.app/",
-  },
-  {
-    name: "NEW NFT Cards",
-    desc: "Landing page of a NFT project",
-    img: Newnft,
-    link: "https://newnftcards.vercel.app/",
-  },
+
   {
     name: "Trojan Wallet",
     desc: "A crypto wallet website",
     img: Trojan,
     link: "https://trojanwallet.vercel.app/",
   },
-  // {
-  //   name: "Flexbot",
-  //   desc: "All-in-One Comprehensive trading bot",
-  //   img: flexbot,
-  //   link: "https://www.flexbot.xyz/",
-  // },
+
   {
     name: "HouseOnSol",
     desc: "Real Estate investing platform on Solana",
     img: HouseOnSol,
     link: "https://house-on-solana.vercel.app/",
-  },
-
-  {
-    name: "BV Swap",
-    desc: "A simple solution for coin and token swaps",
-    img: BV,
-    link: "https://bv-swap.vercel.app/",
-  },
-  {
-    name: "Harmony Launcher",
-    desc: "A redesigned version of harmony launcher website",
-    img: Harmony,
-    link: "https://harmony-launcher.netlify.app/",
   },
 ];
