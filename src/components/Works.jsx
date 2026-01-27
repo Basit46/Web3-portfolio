@@ -25,7 +25,7 @@ const Works = () => {
         y: 20,
       });
     },
-    { scope: worksRef }
+    { scope: worksRef },
   );
 
   return (
@@ -40,7 +40,7 @@ const Works = () => {
             key={i}
             className="project flex flex-col-reverse lg:flex-row h-fit lg:h-[50vh] lg:items-center gap-[20px] lg:gap-0"
           >
-            <div className="lg:ml-[10%] lg:w-[30%] h-full lg:pt-[100px]">
+            <div className="lg:ml-[10%] lg:w-[30%] h-full lg:pt-[100px] pr-[10px]">
               <h1 className="project-text1 text-[2.5rem] vsm:text-[3rem] font-extrabold leading-none">
                 {project.name}
               </h1>

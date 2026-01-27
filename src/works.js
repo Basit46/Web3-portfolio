@@ -1,14 +1,17 @@
 import HouseOnSol from "./assets/Houseonsol.png";
-import Wildfox from "./assets/Wildfox.png";
-import Newnft from "./assets/NFT CARDS.png";
 import Trojan from "./assets/Trojan.png";
-import BV from "./assets/BV Swap.png";
-import Harmony from "./assets/Harmony.png";
 import zerionHub from "./assets/zerionHub.png";
 import coinvista from "./assets/coinvista.png";
 import alignhr from "./assets/alignhr.png";
+import schedio from "./assets/schedio.png";
 
 export const projects = [
+  {
+    name: "Schedio",
+    desc: "A smart booking platform that manages availability, calendars, and seamless payment scheduling",
+    img: schedio,
+    link: "https://use-schedio.vercel.app/me/Basit",
+  },
   {
     name: "AlignHR",
     desc: "A fullstack HR management platform for managing employees, payroll, leaves, attendance etc",
