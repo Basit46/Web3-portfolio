@@ -19,7 +19,7 @@ const MouseFollowSphere = () => {
       onPointerOut={() => setHovered(false)}
       ref={meshRef}
     >
-      <sphereGeometry args={[1.3]} />
+      <sphereGeometry args={[1.0]} />
       <meshBasicMaterial color={hovered ? "aqua" : "white"} wireframe />
     </mesh>
   );
@@ -27,7 +27,7 @@ const MouseFollowSphere = () => {
 
 const ThreeD = () => {
   return (
-    <div className="fixed top-0 left-0 w-full h-screen">
+    <div className="hidden absolute top-0 left-0 w-full h-screen">
       <Canvas>
         <ambientLight />
         <MouseFollowSphere />
