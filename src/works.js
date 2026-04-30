@@ -4,43 +4,48 @@ import zerionHub from "./assets/zerionHub.png";
 import coinvista from "./assets/coinvista.png";
 import alignhr from "./assets/alignhr.png";
 import schedio from "./assets/schedio.png";
+import gasinsight from "./assets/gasinsight.png";
 
 export const projects = [
   {
-    name: "Schedio",
-    desc: "A smart booking platform that manages availability, calendars, and seamless payment scheduling",
-    img: schedio,
-    link: "https://use-schedio.vercel.app/me/Basit",
+    name: "GasInsight",
+    desc: "A platform that provides real-time insight on Gas products across upstream, midstream and downstream",
+    img: gasinsight,
+    link: "https://staging-gasinsight-client.vercel.app/auth/signin?testaccount=eyJlbWFpbCI6InRhcnJ5bGFuZUBlaW5yb3QuY29tIiwicGFzc3dvcmQiOiJUYXJyeUAwMDEifQ==",
   },
   {
     name: "AlignHR",
-    desc: "A fullstack HR management platform for managing employees, payroll, leaves, attendance etc",
+    desc: "Full-stack HR platform that puts payroll, attendance, leaves and employee management in one place. Built for teams that move fast.",
     img: alignhr,
     link: "https://align-hr.vercel.app/",
   },
   {
+    name: "Schedio",
+    desc: "Booking infrastructure that handles availability, scheduling and payments in one flow. No back and forth, no dropped bookings.",
+    img: schedio,
+    link: "https://use-schedio.vercel.app/me/Basit",
+  },
+  {
     name: "CoinVista",
-    desc: "A all-in-one crypto advanced dashboard with real time assets tracking, market analytics, and AI powered insights in a sleek, modern interface",
+    desc: "An advanced crypto dashboard with real time asset tracking, live market analytics and AI powered insights. Built for serious traders.",
     img: coinvista,
     link: "https://coinvista-dashboard.vercel.app/",
   },
   {
     name: "ZerionHub",
-    desc: "A Consumer app built on Zerion",
+    desc: "A consumer grade Web3 app built on top of Zerion, making on chain portfolio management feel native and effortless.",
     img: zerionHub,
     link: "https://zerionhub.vercel.app/",
   },
-
   {
     name: "Trojan Wallet",
-    desc: "A crypto wallet website",
+    desc: "A bold, high converting landing page for a crypto wallet. Designed to build trust fast and drive signups.",
     img: Trojan,
     link: "https://trojanwallet.vercel.app/",
   },
-
   {
     name: "HouseOnSol",
-    desc: "Real Estate investing platform on Solana",
+    desc: "Fractional real estate investing powered by Solana. Own a piece of property on chain, with the speed and cost of a blockchain that actually works.",
     img: HouseOnSol,
     link: "https://house-on-solana.vercel.app/",
   },

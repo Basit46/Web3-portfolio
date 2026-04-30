@@ -17,57 +17,85 @@ const Works = () => {
         scrollTrigger: { trigger: worksRef.current, start: "top 60%" },
       });
 
-      tl.from(".works-text1", {
+      tl.from(".works-title", {
         opacity: 0,
         y: 50,
-      }).from(".projects", {
+        duration: 0.7,
+        ease: "power3.out",
+      }).from(".project-card", {
         opacity: 0,
-        y: 20,
+        y: 30,
+        duration: 0.6,
+        ease: "power2.out",
+        stagger: 0.15,
       });
     },
     { scope: worksRef },
   );
 
   return (
-    <div id="works" ref={worksRef} className="">
-      <h1 className="works-text1 text-[3rem] vsm:text-[5rem] font-extrabold mx-[10%] leading-[1.0]">
-        Proof of Work:
-      </h1>
+    <div id="works" ref={worksRef} className="py-16 md:py-24 lg:py-32">
+      <div className="px-[6%] sm:px-[8%] lg:px-[10%]">
+        <h1
+          className="works-title font-extrabold leading-[1.0] tracking-tight"
+          style={{ fontSize: "clamp(2.5rem, 7vw, 5.5rem)" }}
+        >
+          Proof of Work.
+        </h1>
+        <p
+          className="mt-4 text-white/50 max-w-[400px]"
+          style={{ fontSize: "clamp(0.9rem, 2vw, 1.1rem)" }}
+        >
+          A selection of projects built across web and on-chain.
+        </p>
+      </div>
 
-      <div className="projects mt-[60px] mx-[10%] lg:mx-0 lg:mt-[30px] flex flex-col gap-[50px] sm:gap-[70px] lg:gap-[30px]">
+      <div className="mt-16 md:mt-20 flex flex-col">
         {projects.map((project, i) => (
           <div
             key={i}
-            className="project flex flex-col-reverse lg:flex-row h-fit lg:h-[50vh] lg:items-center gap-[20px] lg:gap-0"
+            className="project-card group px-[6%] sm:px-[8%] lg:px-[10%] py-10 md:py-14 flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-16 transition-colors duration-300"
           >
-            <div className="lg:ml-[10%] lg:w-[30%] h-full lg:pt-[100px] pr-[10px]">
-              <h1 className="project-text1 text-[2.5rem] vsm:text-[3rem] font-extrabold leading-none">
+            <div className="lg:w-[38%] flex flex-col gap-4 shrink-0">
+              <span className="text-white/30 text-sm font-medium tracking-widest uppercase">
+                {String(i + 1).padStart(2, "0")}
+              </span>
+
+              <h2
+                className="font-extrabold leading-none tracking-tight"
+                style={{ fontSize: "clamp(2rem, 4vw, 3.2rem)" }}
+              >
                 {project.name}
-              </h1>
-              <p className="project-text2 mt-[10px] mb-[10px] lg:mb-[30px] vsm:text-[1.2rem] leading-[1.1]">
+              </h2>
+
+              <p
+                className="text-white/60 leading-relaxed max-w-[420px]"
+                style={{ fontSize: "clamp(0.9rem, 1.8vw, 1.1rem)" }}
+              >
                 {project.desc}
               </p>
 
               <a
-                className="project-text3 text-[1.2rem] vsm:text-[1.5rem] flex"
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center gap-2 text-[aqua] font-medium w-fit border-b border-transparent hover:border-[aqua] transition-all duration-200"
+                style={{ fontSize: "clamp(0.95rem, 2vw, 1.15rem)" }}
               >
-                <span>View Live</span> <Arrow />
+                View Live <Arrow className="text-lg" />
               </a>
             </div>
 
-            <div className="relative h-full flex-1 lg:mr-[10%] p-[30px] sm:p-[40px]">
+            <div className="relative flex-1 rounded-xl overflow-hidden aspect-video lg:aspect-auto lg:h-[320px]">
               <img
-                className="absolute top-0 left-0 size-full"
+                className="absolute inset-0 w-full h-full object-cover opacity-40"
                 src={bg}
-                alt="bg"
+                alt=""
               />
               <img
-                className="relative z-[2] h-full w-full object-contain"
+                className="relative z-[2] w-full h-full object-contain p-6 transition-transform duration-500 group-hover:scale-[1.03]"
                 src={project.img}
-                alt="project"
+                alt={project.name}
               />
             </div>
           </div>
