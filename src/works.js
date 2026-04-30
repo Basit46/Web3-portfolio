@@ -5,6 +5,7 @@ import coinvista from "./assets/coinvista.png";
 import alignhr from "./assets/alignhr.png";
 import schedio from "./assets/schedio.png";
 import gasinsight from "./assets/gasinsight.png";
+import pulsemeter from "./assets/pulsemeter.png";
 
 export const projects = [
   {
@@ -24,6 +25,12 @@ export const projects = [
     desc: "Booking infrastructure that handles availability, scheduling and payments in one flow. No back and forth, no dropped bookings.",
     img: schedio,
     link: "https://use-schedio.vercel.app/me/Basit",
+  },
+  {
+    name: "PulseMeter (WIP)",
+    desc: "A CRM built for solar energy businesses. Tracks customers, manages prepaid and postpaid billing, and gives operators full visibility over their entire user base.",
+    img: pulsemeter,
+    link: "https://staging-crm-admin-mu.vercel.app/",
   },
   {
     name: "CoinVista",
