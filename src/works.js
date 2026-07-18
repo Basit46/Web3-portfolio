@@ -8,12 +8,12 @@ import gasinsight from "./assets/gasinsight.png";
 import pulsemeter from "./assets/pulsemeter.png";
 
 export const projects = [
-  {
-    name: "GasInsight",
-    desc: "A platform that provides real-time insight on Gas products across upstream, midstream and downstream",
-    img: gasinsight,
-    link: "https://staging-gasinsight-client.vercel.app/auth/signin?testaccount=eyJlbWFpbCI6InRhcnJ5bGFuZUBlaW5yb3QuY29tIiwicGFzc3dvcmQiOiJUYXJyeUAwMDEifQ==",
-  },
+  // {
+  //   name: "GasInsight",
+  //   desc: "A platform that provides real-time insight on Gas products across upstream, midstream and downstream",
+  //   img: gasinsight,
+  //   link: "https://staging-gasinsight-client.vercel.app/auth/signin?testaccount=eyJlbWFpbCI6InRhcnJ5bGFuZUBlaW5yb3QuY29tIiwicGFzc3dvcmQiOiJUYXJyeUAwMDEifQ==",
+  // },
   {
     name: "AlignHR",
     desc: "Full-stack HR platform that puts payroll, attendance, leaves and employee management in one place. Built for teams that move fast.",

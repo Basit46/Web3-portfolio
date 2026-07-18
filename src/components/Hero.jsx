@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { HiOutlineArrowTrendingUp as Arrow } from "react-icons/hi2";
-import img1 from "../assets/img1.png";
+import img1 from "../assets/img1.jpg";
 import img2 from "../assets/img2.jpg";
 import img3 from "../assets/img3.jpg";
 import gsap from "gsap";
@@ -62,14 +62,14 @@ const Hero = () => {
           stagger: 0.1,
         });
     },
-    { scope: heroRef }
+    { scope: heroRef },
   );
 
   return (
     <div
       id="hero"
       ref={heroRef}
-      className="hero w-full relative h-screen pt-[150px]"
+      className="hero w-full relative h-screen pt-[150px] "
     >
       <ThreeD />
 
