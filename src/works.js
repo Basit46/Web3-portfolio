@@ -6,6 +6,7 @@ import alignhr from "./assets/alignhr.png";
 import schedio from "./assets/schedio.png";
 import gasinsight from "./assets/gasinsight.png";
 import pulsemeter from "./assets/pulsemeter.png";
+import discos from "./assets/discos.png";
 
 export const projects = [
   // {
@@ -14,6 +15,12 @@ export const projects = [
   //   img: gasinsight,
   //   link: "https://staging-gasinsight-client.vercel.app/auth/signin?testaccount=eyJlbWFpbCI6InRhcnJ5bGFuZUBlaW5yb3QuY29tIiwicGFzc3dvcmQiOiJUYXJyeUAwMDEifQ==",
   // },
+  {
+    name: "Nigerian Discos",
+    desc: "Real-time power distribution analytics platform tracking live grid performance across Nigeria's electricity distribution companies",
+    img: discos,
+    link: "https://discos.basit.com.ng/",
+  },
   {
     name: "AlignHR",
     desc: "Full-stack HR platform that puts payroll, attendance, leaves and employee management in one place. Built for teams that move fast.",
