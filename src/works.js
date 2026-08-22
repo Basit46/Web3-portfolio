@@ -9,12 +9,6 @@ import pulsemeter from "./assets/pulsemeter.png";
 import discos from "./assets/discos.png";
 
 export const projects = [
-  // {
-  //   name: "GasInsight",
-  //   desc: "A platform that provides real-time insight on Gas products across upstream, midstream and downstream",
-  //   img: gasinsight,
-  //   link: "https://staging-gasinsight-client.vercel.app/auth/signin?testaccount=eyJlbWFpbCI6InRhcnJ5bGFuZUBlaW5yb3QuY29tIiwicGFzc3dvcmQiOiJUYXJyeUAwMDEifQ==",
-  // },
   {
     name: "Nigerian Discos",
     desc: "Real-time power distribution analytics platform tracking live grid performance across Nigeria's electricity distribution companies",
