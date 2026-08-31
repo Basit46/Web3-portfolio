@@ -7,13 +7,20 @@ import schedio from "./assets/schedio.png";
 import gasinsight from "./assets/gasinsight.png";
 import pulsemeter from "./assets/pulsemeter.png";
 import discos from "./assets/discos.png";
+import paylink from "./assets/paylink.png";
 
 export const projects = [
   {
-    name: "Nigerian Discos",
-    desc: "Real-time power distribution analytics platform tracking live grid performance across Nigeria's electricity distribution companies",
-    img: discos,
-    link: "https://discos.basit.com.ng/",
+    name: "Schedio",
+    desc: "Booking infrastructure that handles availability, scheduling and payments in one flow. No back and forth, no dropped bookings.",
+    img: schedio,
+    link: "https://use-schedio.vercel.app/me/Basit",
+  },
+  {
+    name: "CoinVista",
+    desc: "An advanced crypto dashboard with real time asset tracking, live market analytics and AI powered insights. Built for serious traders.",
+    img: coinvista,
+    link: "https://coinvista-dashboard.vercel.app/",
   },
   {
     name: "AlignHR",
@@ -28,16 +35,22 @@ export const projects = [
     link: "https://use-schedio.vercel.app/me/Basit",
   },
   {
+    name: "PayLink",
+    desc: "AI-powered VTU and bills payment platform handling airtime, data, electricity, and cable subscriptions through a conversational tool-calling layer",
+    img: paylink,
+    link: "https://paylink.basit.com.ng/",
+  },
+  {
+    name: "Nigerian Discos",
+    desc: "Real-time power distribution analytics platform tracking live grid performance across Nigeria's electricity distribution companies",
+    img: discos,
+    link: "https://discos.basit.com.ng/",
+  },
+  {
     name: "PulseMeter (WIP)",
     desc: "A CRM built for solar energy businesses. Tracks customers, manages prepaid and postpaid billing, and gives operators full visibility over their entire user base.",
     img: pulsemeter,
     link: "https://staging-crm-admin-mu.vercel.app/",
-  },
-  {
-    name: "CoinVista",
-    desc: "An advanced crypto dashboard with real time asset tracking, live market analytics and AI powered insights. Built for serious traders.",
-    img: coinvista,
-    link: "https://coinvista-dashboard.vercel.app/",
   },
   {
     name: "ZerionHub",
