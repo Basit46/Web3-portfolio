@@ -28,12 +28,7 @@ export const projects = [
     img: alignhr,
     link: "https://align-hr.vercel.app/",
   },
-  {
-    name: "Schedio",
-    desc: "Booking infrastructure that handles availability, scheduling and payments in one flow. No back and forth, no dropped bookings.",
-    img: schedio,
-    link: "https://use-schedio.vercel.app/me/Basit",
-  },
+ 
   {
     name: "PayLink",
     desc: "AI-powered VTU and bills payment platform handling airtime, data, electricity, and cable subscriptions through a conversational tool-calling layer",
